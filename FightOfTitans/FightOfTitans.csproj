@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BowMan.cs" />
+    <Compile Include="IWeapon.cs" />
+    <Compile Include="Mag.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SwardMan.cs" />
+    <Compile Include="WBow.cs" />
+    <Compile Include="WMagic.cs" />
+    <Compile Include="WSward.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
