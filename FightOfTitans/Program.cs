@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace FightOfTitans
 {
     class Program
     {
-        static void Main(string[] args)
+        static void play()
         {
             BowMan Player1 = new BowMan("StupidMan", new WBow());
             Console.WriteLine("q: stop; w: change weapon; e: attack");
@@ -24,6 +24,11 @@ namespace FightOfTitans
                     default: break;
                 }
             }
+        }
+        static void Main(string[] args)
+        {
+            Thread thread = new Thread(play);
+            thread.Start();
             //Console.ReadKey();
         }
     }
