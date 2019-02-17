@@ -8,7 +8,7 @@ namespace FightOfTitans
 {
     class WBow : IWeapon
     {
-        static Random rand = new Random();
+        Random rand = new Random();
         public string typeWeapon()
         {
             return "Bow";

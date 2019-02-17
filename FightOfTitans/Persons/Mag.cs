@@ -16,7 +16,7 @@ namespace FightOfTitans
         public void attack()
         {
             Console.WriteLine($"Name player: {Name} | Person: Mag | Gived damage: " +
-                $"{weapon.damageWeapon()} | Type Weapon: {weapon.typeWeapon()}");
+                $"{this.weapon.damageWeapon()} | Type Weapon: {this.weapon.typeWeapon()}");
         }
     }
 }
