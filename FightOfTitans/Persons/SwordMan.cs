@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace FightOfTitans
 {
-    class BowMan : Person
+    class SwordMan : Person
     {
-        public BowMan(string Name) //: base(Name)
+        public SwordMan(string Name)// : base(Name)
         {
             this.Name = Name;
-            TypePerson = "BowMan";
-            this.weapon = new WBow();
+            TypePerson = "SwardMan";
+            weapon = new WSword();
         }
     }
 }
