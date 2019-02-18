@@ -6,32 +6,13 @@ using System.Threading.Tasks;
 
 namespace FightOfTitans
 {
-    class WMagic : IWeapon
+    class WMagic : Weapon, IWeapon
     {
-        static Random rand = new Random();
-        public string typeWeapon()
+        public WMagic()
         {
-            return "Magica";
+            NameWeapon = "WMagic";
+            mindmg = 10;
+            maxdmg = 30;
         }
-        public int damageWeapon()
-        {
-
-            return rand.Next(mindmg, maxdmg + 1);
-        }
-        public int maxdmg
-        {
-            get
-            {
-                return 24;
-            }
-        }
-        public int mindmg
-        {
-            get
-            {
-                return 7;
-            }
-        }
-
     }
 }

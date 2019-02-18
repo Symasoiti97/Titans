@@ -10,7 +10,5 @@ namespace FightOfTitans
     {
         string typeWeapon();
         int damageWeapon();
-        int maxdmg { get; }
-        int mindmg { get; }
     }
 }

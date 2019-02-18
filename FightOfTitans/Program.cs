@@ -10,25 +10,32 @@ namespace FightOfTitans
     {
         static void play()
         {
-            BowMan Player1 = new BowMan("StupidMan", new WBow());
+            Person person = Person.CreatePerson();
             Console.WriteLine("q: stop; w: change weapon; e: attack");
+
             bool stop = false;
+
             while (!stop)
             {
                 ConsoleKeyInfo key = Console.ReadKey(true);
                 switch (key.Key)
                 {
                     case ConsoleKey.Q: stop = true; break;
-                    case ConsoleKey.W: Player1.ChangeWeapon(); break;
-                    case ConsoleKey.E: Player1.attack(); break;
+                    case ConsoleKey.W: person.ChangeWeapon(); break;
+                    case ConsoleKey.E: person.Attack(); break;
                     default: break;
                 }
             }
         }
+
         static void Main(string[] args)
         {
             Thread thread = new Thread(play);
             thread.Start();
+            //Person player = new Mag("Name");
+            //player.Attack();
+            //ConsoleKeyInfo key = Console.ReadKey(true);
+            //Console.WriteLine(Convert.ToInt16(key.KeyChar.ToString()) + 5);
             //Console.ReadKey();
         }
     }

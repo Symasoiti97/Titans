@@ -8,15 +8,11 @@ namespace FightOfTitans
 {
     class Mag : Person
     {
-        public Mag(string name, IWeapon weapon) : base(name, weapon)
+        public Mag(string Name)// : base(Name)
         {
-
-        }
-
-        public void attack()
-        {
-            Console.WriteLine($"Name player: {Name} | Person: Mag | Gived damage: " +
-                $"{this.weapon.damageWeapon()} | Type Weapon: {this.weapon.typeWeapon()}");
+            this.Name = Name;
+            TypePerson = "Mag";
+            this.weapon = new WMagic();
         }
     }
 }
